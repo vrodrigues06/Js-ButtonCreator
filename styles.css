@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  background: #ccc;
+}
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+  margin-top: 1rem;
+}
+
+input {
+  display: block;
+}
+
+#texto {
+  width: 100%;
+}
+
+.color-flex {
+  display: flex;
+  gap: 40px;
+}
+
+.color-flex input {
+  width: 80px
+}
+
+
+.button-creator {
+  display: grid;
+  width: 1260px;
+  margin: 0 auto;
+  padding: 30px;
+  grid-template-columns: 330px 1fr;
+  gap: 30px;
+}
+
+#controles {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: .875rem;
+  background: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .1);
+  display: grid;
+}
+
+.css {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #333;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.css span {
+  display: block;
+  margin-bottom: .5rem
+}
+
+select {
+  display: block;
+  margin-top: 1.5rem;
+}
+
+.font-weight {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.font-weight input {
+  position: relative;
+  display: flex;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.font-weight input:first-child::after {
+  content: 'Bold';
+  display: inline-block;
+  position: absolute;
+  font-size: .7rem;
+  left: 17px;
+}
+
+.font-weight input:last-child::after {
+  content: 'Normal';
+  display: inline-block;
+  position: absolute;
+  left: 17px;
+  font-size: .7rem;
+}
